@@ -35,4 +35,23 @@
 *  `source ~/.bashrc`
 *  To lunch the Rviz simulator with slider motors control (joint_state_publisher) use this command `roslaunch robot_arm_pkg check_motors.launch`
 *  Rviz Simulator:
-*  
+
+![Rviz](https://github.com/faisalsaud63192/Robot_Arm_Control_in_ROS/blob/main/Rviz.png)
+
+4. Control the Arm in Gazebo simulator .
+* Change the permission `cd catkin/src/arduino_robot_arm/robot_arm_pkg/scripts` then `sudo chmod +x joint_states_to_gazebo.py`
+* Open new terminal to launch Rviz `roslaunch robot_arm_pkg check_motors.launch`
+* Open new terminal to launch Gazebo `roslaunch robot_arm_pkg check_motors_gazebo.launch`
+* Then run the python script to communicate with Gazebo `rosrun robot_arm_pkg joint_states_to_gazebo.py` 
+* Rviz with Gazebo:
+![Gazebo](https://github.com/faisalsaud63192/Robot_Arm_Control_in_ROS/blob/main/Gazebo.png)
+5. Now, lets used Moveit in Rvis which will help for kinematics, motion planning, trajectory processing and controlling the robot 
+* `roslaunch moveit_pkg demo.launch`
+* Moveit:
+
+![3](https://github.com/faisalsaud63192/Robot_Arm_Control_in_ROS/blob/main/3.png)
+
+![moveit](https://github.com/faisalsaud63192/Robot_Arm_Control_in_ROS/blob/main/moveit.png)
+
+6. Task is Done .
+
